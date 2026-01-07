@@ -1,19 +1,19 @@
-# Operational Data Visualisation Dashboard
+# 📊 Operational Data Visualisation Dashboard
 
 ## Overview
-This project demonstrates a real-world data visualisation and reporting workflow, covering the full process from raw data ingestion to stakeholder-ready insights. It simulates a business environment where operational data is sourced from multiple systems, cleaned, merged, and transformed into clear, interactive visualisations.
+This project demonstrates a real-world data visualisation and reporting workflow, covering the full process from raw data ingestion to stakeholder-ready insights. It simulates a business environment where operational data is sourced from multiple systems, cleaned, merged, and transformed into clear, interactive visualisations suitable for decision-making.
 
 The project was assessed against industry-aligned criteria and received an **A grade** for data handling, analysis, and clarity of presentation.
 
 ---
 
 ## Business Context
-In many organisations, operational data exists across multiple files and systems with inconsistent formats and varying data quality. Data administrators and reporting analysts are responsible for consolidating this information into reliable, accurate reports that support operational and management decision-making.
+In many organisations, operational data exists across multiple files and systems with inconsistent formats and varying levels of data quality. Data administrators and reporting analysts are responsible for consolidating this information into reliable, accurate reports that support operational and management decision-making.
 
 This project reflects that workflow by addressing:
-- Data quality issues
+- Data quality and validation issues
 - Inconsistent structures across datasets
-- The need for clear, interpretable reporting outputs
+- The need for clear, interpretable reporting outputs for non-technical stakeholders
 
 ---
 
@@ -23,14 +23,14 @@ This project reflects that workflow by addressing:
 - Standardising formats and column naming conventions  
 - Merging datasets using appropriate relational keys  
 - Performing exploratory analysis to identify trends and patterns  
-- Producing interactive visualisations suitable for reporting and dashboards  
+- Producing interactive visualisations suitable for reporting dashboards  
 
 ---
 
 ## Technologies Used
 - **Python**
-- **Pandas** – data cleaning, transformation, and aggregation
-- **Plotly** – interactive visualisation
+- **Pandas** — data cleaning, transformation, and aggregation  
+- **Plotly** — interactive visualisation  
 - **Jupyter Notebook**
 - **CSV datasets**
 
@@ -38,17 +38,17 @@ This project reflects that workflow by addressing:
 
 ## Visualisations & Outputs
 The project includes interactive and static visualisations designed for non-technical stakeholders, including:
-- Time-based trend analysis
-- Category and distribution comparisons
-- Aggregated summaries across merged datasets
+- Time-based trend analysis  
+- Category and distribution comparisons  
+- Aggregated summaries across merged datasets  
 
 Screenshots of representative visualisations are included in the `/images` directory.
 
 ---
 
 ## Data Handling Approach
-- Validated incoming datasets for structure and completeness  
-- Normalised inconsistent values and formats  
+- Validated incoming datasets for structure, consistency, and completeness  
+- Normalised inconsistent values and data formats  
 - Applied joins across datasets to form a unified analytical view  
 - Used aggregation and filtering to support meaningful reporting  
 - Ensured all processing steps were reproducible and transparent  
@@ -58,7 +58,7 @@ Screenshots of representative visualisations are included in the `/images` direc
 ## Business Value
 The techniques demonstrated in this project align with real-world responsibilities in data administration and reporting roles, including:
 - Maintaining data accuracy and consistency  
-- Supporting operational reporting requirements  
+- Supporting operational and management reporting requirements  
 - Translating raw data into actionable insights  
 - Producing repeatable and auditable data workflows  
 
