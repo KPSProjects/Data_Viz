@@ -1,9 +1,0 @@
-# Data files
-data/processed/*.csv
-data/processed/*.xlsx
-
-# Jupyter checkpoints
-.ipynb_checkpoints/
-
-# Virtual environments
-.venv/
