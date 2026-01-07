@@ -1,90 +1,72 @@
-# Video Game Sales & Popularity Trends — Data Visualisation Project
+# Operational Data Visualisation Dashboard
 
-This repository contains my submission for the CM4125 Data Visualisation coursework at Robert Gordon University.  
-The project examines global video game sales, platform performance, genre trends, and modern Steam metadata to produce a clear, well-designed infographic summarising insights across multiple decades.
+## Overview
+This project demonstrates a real-world data visualisation and reporting workflow, covering the full process from raw data ingestion to stakeholder-ready insights. It simulates a business environment where operational data is sourced from multiple systems, cleaned, merged, and transformed into clear, interactive visualisations.
 
----
-
-## Project Aim
-
-The aim of this project is to:
-
-- Explore how video game popularity has evolved from the 1980s to 2024  
-- Compare historic physical retail sales with modern digital platform data  
-- Identify dominant genres, platforms, and top-selling games  
-- Communicate insights through a clean, unbiased infographic  
-
-The project demonstrates the full data visualisation pipeline: data acquisition, cleaning, transformation, aggregation, and final visual design.
+The project was assessed against industry-aligned criteria and received an **A grade** for data handling, analysis, and clarity of presentation.
 
 ---
 
-## Datasets Used
+## Business Context
+In many organisations, operational data exists across multiple files and systems with inconsistent formats and varying data quality. Data administrators and reporting analysts are responsible for consolidating this information into reliable, accurate reports that support operational and management decision-making.
 
-Four independent datasets were used:
-
-1. **vgsales.csv**  
-   Historic video game sales across platforms.
-
-2. **best_selling_video_games_of_all_time.csv**  
-   Lifetime sales figures for top-selling games.
-
-3. **steam.csv**  
-   Steam game metadata including release dates, genres, and metrics.
-
-4. **steamspy_tag_data.csv**  
-   SteamSpy tag data for analysing common gameplay themes.
-
-These datasets together represent both the retail era and digital distribution era of gaming.
+This project reflects that workflow by addressing:
+- Data quality issues
+- Inconsistent structures across datasets
+- The need for clear, interpretable reporting outputs
 
 ---
 
-## Data Processing & Methods
-
-All data processing was performed in Python using Pandas inside the Jupyter notebook  
-`Data_Viz_Program.ipynb`.
-
-### Data Cleaning
-- Converted year, date, and sales fields to numeric or datetime types  
-- Dropped rows missing critical identifiers (Name, Year, Genre, Platform)  
-- Removed invalid or unreasonable records (e.g., sales <= 0 or invalid Steam dates)
-
-### Feature Engineering
-- Created a `Decade` column from `Year`  
-- Added a `Sales_Category` column by binning global sales into categories  
-- Extracted `Year` from Steam release dates  
-- Normalised game names to create a merge key (`Name_key`)  
-- Transformed SteamSpy tag data into long format for frequency analysis
-
-### Row Handling
-- Removed rows lacking essential data  
-- Cleaned date fields using `errors="coerce"` and dropped invalid entries  
-- Ensured datasets only included meaningful observations for analysis
-
-### Dataset Merging
-- Merged VGSales with the Best-Selling Games dataset using the engineered `Name_key`  
-- Steam datasets were analysed separately due to incompatible identifiers
-
-### Aggregation
-Produced aggregated summaries for:
-
-- Top 10 games by global sales  
-- Top 10 genres  
-- Top 10 platforms  
-- Global sales by decade and genre  
-- Steam games released per year  
-- Most frequent Steam tags  
-
-These results were used to construct the infographic’s number stories.
+## Key Responsibilities Demonstrated
+- Ingesting and validating structured datasets from multiple sources  
+- Cleaning and preprocessing data (handling missing values, inconsistencies, and duplicates)  
+- Standardising formats and column naming conventions  
+- Merging datasets using appropriate relational keys  
+- Performing exploratory analysis to identify trends and patterns  
+- Producing interactive visualisations suitable for reporting and dashboards  
 
 ---
 
-## Final Infographic
-
-A high-resolution static infographic produced from the cleaned and aggregated data is included in this repository.
-
-**Infographic link:**  
-*(Insert your GitHub image link here after uploading the PNG)*
-
-The infographic visualises major trends such as genre dominance, platform growth, top-selling titles, decade shifts, and Steam ecosystem patterns.
+## Technologies Used
+- **Python**
+- **Pandas** – data cleaning, transformation, and aggregation
+- **Plotly** – interactive visualisation
+- **Jupyter Notebook**
+- **CSV datasets**
 
 ---
+
+## Visualisations & Outputs
+The project includes interactive and static visualisations designed for non-technical stakeholders, including:
+- Time-based trend analysis
+- Category and distribution comparisons
+- Aggregated summaries across merged datasets
+
+Screenshots of representative visualisations are included in the `/images` directory.
+
+---
+
+## Data Handling Approach
+- Validated incoming datasets for structure and completeness  
+- Normalised inconsistent values and formats  
+- Applied joins across datasets to form a unified analytical view  
+- Used aggregation and filtering to support meaningful reporting  
+- Ensured all processing steps were reproducible and transparent  
+
+---
+
+## Business Value
+The techniques demonstrated in this project align with real-world responsibilities in data administration and reporting roles, including:
+- Maintaining data accuracy and consistency  
+- Supporting operational reporting requirements  
+- Translating raw data into actionable insights  
+- Producing repeatable and auditable data workflows  
+
+---
+
+## Project Structure
+```text
+/data        → Raw and cleaned datasets  
+/notebooks  → Data processing and visualisation notebooks  
+/images     → Dashboard and chart screenshots  
+README.md   → Project documentation
